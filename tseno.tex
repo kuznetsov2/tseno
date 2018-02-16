@@ -1,0 +1,57 @@
+\PassOptionsToPackage{svgnames}{xcolor}
+\documentclass[a4paper,14pt]{article}
+
+\input preamble.tex
+
+\usepackage{sectsty}
+\usepackage{lipsum}
+\usepackage{indentfirst}
+\allsectionsfont{\centering\normalsize} % Заголовки с абзацного отступа: \indent %% по центру \centering
+\subsectionfont{\normalsize\centering} % Подразделы с абзацного отступа + обычный шрифт
+
+\begin{document}
+\input{titlist}
+\newpage
+%\thispagestyle{empty}
+%\begingroup
+%	\centering{
+		\tableofcontents
+				%}
+%\endgroup
+			
+		%
+
+\newpage
+\input{intro}
+
+\newpage
+\input{1glava}
+%\input{1-3glava}
+
+\newpage
+\input{2glava}
+
+\newpage
+\input{3glava}
+
+\newpage
+\input{conclusions}
+\nocite{michurina}
+
+\newpage
+\renewcommand\refname{Список использованных источников}
+\addcontentsline{toc}{section}{Список использованных источников}
+\printbibliography
+%\addcontentsline{toc}{section}{Приложения}
+%\small{\listoftables}
+%\addcontentsline{toc}{section}{Список таблиц}
+%\newpage
+%\thispagestyle{empty}
+%\topskip0pt
+%\vspace*{\fill}%
+%\begin{center}
+%	\textbf{ПРИЛОЖЕНИЯ}
+%\end{center}
+%\vspace*{\fill}
+%
+\end{document}
